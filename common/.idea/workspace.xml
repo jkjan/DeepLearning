@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8ae0ccc2-c78e-44f8-ba9b-519b569eca2f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../MnistHandWriting/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NeuralNetworkTraining/Differential.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NeuralNetworkTraining/GraidentDescent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NeuralNetworkTraining/LossFunction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NeuralNetworkTraining/MiniBatch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NeuralNetworkTraining/mnist.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NeuralNetworkTraining/simplenet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mycommon/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mycommon/commonlyused.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MnistHandWriting/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MnistHandWriting/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MnistHandWriting/MnistHandWritingWithBatch.py" beforeDir="false" afterPath="$PROJECT_DIR$/../MnistHandWriting/MnistHandWritingWithBatch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Perceptron/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Perceptron/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../numpy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../numpy/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1X9uCeWTdpNQ7FZZNpEydiTltiz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8ae0ccc2-c78e-44f8-ba9b-519b569eca2f" name="Default Changelist" comment="" />
+      <created>1580470504323</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580470504323</updated>
+      <workItem from="1580470505401" duration="416000" />
+      <workItem from="1580470939435" duration="12000" />
+      <workItem from="1580472180994" duration="9000" />
+      <workItem from="1580473157803" duration="30000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../MnistHandWriting/MnistHandWriting.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

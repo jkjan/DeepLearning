@@ -1,6 +1,7 @@
 import MnistHandWriting as mh
 import numpy as np
 
+
 x, t = mh.getData()
 network = mh.initNetwork()
 

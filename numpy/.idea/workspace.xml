@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd74e054-a6eb-4871-8c61-8114895d210c" name="Default Changelist" comment="" />
+    <list default="true" id="cd74e054-a6eb-4871-8c61-8114895d210c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../MnistHandWriting/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MnistHandWriting/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MnistHandWriting/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MnistHandWriting/MnistHandWritingWithBatch.py" beforeDir="false" afterPath="$PROJECT_DIR$/../MnistHandWriting/MnistHandWritingWithBatch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Perceptron/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Perceptron/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +19,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1X3SHPjAfBk7rcMuc3vYM6GEsY6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -79,6 +88,7 @@
       <updated>1580273196987</updated>
       <workItem from="1580273207001" duration="3674000" />
       <workItem from="1580281789105" duration="9000" />
+      <workItem from="1580459300842" duration="8000" />
     </task>
     <servers />
   </component>
@@ -86,28 +96,28 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1340" height="197" key="GridCell.Tab.0.bottom" timestamp="1580277028202">
+    <state width="1340" height="197" key="GridCell.Tab.0.bottom" timestamp="1580459308126">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="197" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580277028202" />
-    <state width="1340" height="197" key="GridCell.Tab.0.center" timestamp="1580277028202">
+    <state width="1340" height="197" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580459308126" />
+    <state width="1340" height="197" key="GridCell.Tab.0.center" timestamp="1580459308126">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="197" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580277028202" />
-    <state width="1340" height="197" key="GridCell.Tab.0.left" timestamp="1580277028202">
+    <state width="1340" height="197" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580459308126" />
+    <state width="1340" height="197" key="GridCell.Tab.0.left" timestamp="1580459308126">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="197" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580277028202" />
-    <state width="1340" height="197" key="GridCell.Tab.0.right" timestamp="1580277028202">
+    <state width="1340" height="197" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580459308126" />
+    <state width="1340" height="197" key="GridCell.Tab.0.right" timestamp="1580459308126">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="197" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580277028202" />
+    <state width="1340" height="197" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580459308126" />
     <state x="520" y="145" key="SettingsEditor" timestamp="1580276324336">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="520" y="145" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580276324336" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/numpy$numpyBasic.coverage" NAME="numpyBasic Coverage Results" MODIFIED="1580273255205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/numpy$numpyBasic.coverage" NAME="numpyBasic Coverage Results" MODIFIED="1580459305892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

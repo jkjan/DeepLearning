@@ -6,13 +6,13 @@
 *.zip
 *.npy
 
-data/
+*/data/
 /data/
 *.pkl
 *.iml
 *.pth
 */mnist_dataset
-/root/
-/data/
+*/root/
+*/data/
 
 root/

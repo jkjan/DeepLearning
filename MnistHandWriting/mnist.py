@@ -92,7 +92,7 @@ def _change_one_hot_label(X):
     return T
 
 
-def load_mnist(normalize=True, flatten=True, one_hot_label=False):
+def load_mnist(normalize: object = True, flatten: object = True, one_hot_label: object = False) -> object:
     """MNIST 데이터셋 읽기
 
     Parameters

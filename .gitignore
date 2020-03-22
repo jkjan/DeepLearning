@@ -1,0 +1,16 @@
+*.txt
+*.gz
+*.bin
+*.xml
+*.csv
+*.zip
+*.npy
+
+data/
+/data/
+*.pkl
+*.iml
+*.pth
+*/mnist_dataset
+/root/
+/data/

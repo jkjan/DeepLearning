@@ -1,6 +1,7 @@
 import mnist as mn
 import numpy as np
 from PIL import Image
+from mnist import load_mnist
 
 def sigmoid(x):
     return 1 / (1 + np.exp(-x))
@@ -22,6 +23,7 @@ def initNetwork():
 def predict(network, x):
     W1, W2, W3 = network['W1'], network['W2'], network['W3']
     b1, b2, b3 = network['b1'], network['b2'], network['b3']
+    print(W1.shape, b1.shape)
     a1 = np.dot(x, W1) + b1
     z1 = sigmoid(a1)
     a2 = np.dot(z1, W2) + b2
@@ -38,17 +40,20 @@ def showImage(img):
 #print(x_test.shape)   # 시험 이미지   # 10000, 784   (10000개의 이미지를 시험해보자)
 #print(t_test.shape)   # 시험 레이블   # 10000        (10000개의 결과)
 #
-# img = x_train[0]
-# label = t_train[0]
-# print(label)
-#
-# print(img.shape)
-# img = img.reshape(28, 28)   ## 받아올 때 flatten = True 로 받았기 때문에 (784, ) 짜리 일차원 배열. 따라서 reshape 로 이미지 화
-# print(img.shape)
-# showImage(img)
+
+
+(x_train, t_train), (x_test, t_test) = load_mnist(flatten=True, normalize=False)
+
+img = x_train[0]
+label = t_train[0]
+print(label)
+
+print(img.shape)
+img = img.reshape(28, 28)   ## 받아올 때 flatten = True 로 받았기 때문에 (784, ) 짜리 일차원 배열. 따라서 reshape 로 이미지 화
+print(img.shape)
+showImage(img)
 
 # 입력층 뉴런을 784개, 출력층 뉴런을 10개 (0~9)로 구성
-
 
 x, t = getData()
 network = initNetwork()

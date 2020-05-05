@@ -44,6 +44,7 @@ except FileNotFoundError:
             cost = criterion(hypothesis, Y)
             cost.backward()
             optimizer.step()
+            print(cost.item())
             avg_cost += cost / total_batch
 
         print("[Epoch:{}] cost = {}".format(epoch+1, avg_cost))

@@ -1,9 +1,10 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-def showImg(img):
+def show_img(img, label):
     img = img/2 + 0.5
-    npImg = img.numpy()
-    plt.imshow(np.transpose(npImg, (1, 2, 0)))
+    np_img = img.numpy()
+    plt.imshow(np.transpose(np_img, (1, 2, 0)))
+    plt.title(label)
     plt.show()
 

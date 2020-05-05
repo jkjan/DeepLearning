@@ -29,8 +29,8 @@ criterion = nn.CrossEntropyLoss()
 # optimizer
 optimizer = torch.optim.Adam(model.parameters(), lr=lr)
 
-# scheduler
-scheduler = lr_scheduler.StepLR(optimizer, step_size=20, gamma=0.2)
+# # scheduler
+# scheduler = lr_scheduler.StepLR(optimizer, step_size=20, gamma=0.2)
 
 # to train
 model.train()

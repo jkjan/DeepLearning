@@ -1,4 +1,5 @@
 import torch.nn as nn
+import torch
 
 class CNN(nn.Module):
     def __init__(self, batch_size):
@@ -32,9 +33,10 @@ class CNN(nn.Module):
             nn.LeakyReLU(),
             # nn.Dropout2d(0.2),
             nn.BatchNorm1d(100),
-            nn.Linear(100, 10)
+            nn.Linear(100, 10, bias=True)
         )
 
+        torch.nn.init.xavier_normal_(self.fc.weight)
         # for m in self.modules():
         #     if isinstance(m, nn.Conv2d):
         #         nn.init.kaiming_normal_(m.weight.data)

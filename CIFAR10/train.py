@@ -27,8 +27,10 @@ model = CNN(batch_size).to(device)
 criterion = nn.CrossEntropyLoss()
 
 # optimizer
-optimizer = torch.optim.SGD(model.parameters(), lr=lr,
-                      momentum=0.9, weight_decay=5e-4)
+# optimizer = torch.optim.SGD(model.parameters(), lr=lr,
+#                       momentum=0.9, weight_decay=5e-4)
+optimizer = torch.optim.Adam(model.parameters(), lr=lr)
+
 # # scheduler
 # scheduler = lr_scheduler.StepLR(optimizer, step_size=20, gamma=0.2)
 

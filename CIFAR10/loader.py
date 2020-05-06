@@ -4,12 +4,10 @@ import torch
 
 def load_data(batch_size):
     transform_train = tf.Compose([
+        tf.RandomCrop(32, padding=4),
         tf.RandomHorizontalFlip(),
-        tf.RandomRotation(10),
-        tf.RandomAffine(0, shear=10, scale=(0.8, 1.2)),
-        tf.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2),
         tf.ToTensor(),
-        tf.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
+        tf.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)),
     ])
 
     transform_test = tf.Compose([

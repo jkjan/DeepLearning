@@ -8,14 +8,14 @@ class CNN(nn.Module):
         self.layer1 = nn.Sequential(
             nn.Conv2d(3, 16, 3, padding=1),
             nn.ELU(),
-            nn.Dropout2d(0.3),
+            # nn.Dropout2d(0.3),
             nn.BatchNorm2d(16)
         )
 
         self.layer2 = nn.Sequential(
             nn.Conv2d(16, 32, 3, padding=1),
             nn.ELU(),
-            nn.Dropout2d(0.3),
+            # nn.Dropout2d(0.3),
             nn.BatchNorm2d(32),
             nn.MaxPool2d(2, 2),
         )
@@ -23,7 +23,7 @@ class CNN(nn.Module):
         self.layer3 = nn.Sequential(
             nn.Conv2d(32, 64, 3, padding=1),
             nn.ELU(),
-            nn.Dropout2d(0.3),
+            # nn.Dropout2d(0.3),
             nn.BatchNorm2d(64),
             nn.MaxPool2d(2, 2)
         )
@@ -31,7 +31,7 @@ class CNN(nn.Module):
         self.fc_layer = nn.Sequential(
             nn.Linear(64*8*8, 100),
             nn.ELU(),
-            nn.Dropout(0.3),
+            # nn.Dropout(0.3),
             nn.BatchNorm1d(100),
             # nn.Softmax(dim=1)
         )

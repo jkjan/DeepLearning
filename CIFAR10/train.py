@@ -10,12 +10,12 @@ import time
 import matplotlib.pyplot as plt
 
 # hyper parameters
-batch_size = 128
-lr = 0.1
-n_iter = 1000
+batch_size = 256
+lr = 0.01
+n_iter = 100
 
 # loss check
-print_per = 100
+print_per = 10
 
 # initiating
 device = init()

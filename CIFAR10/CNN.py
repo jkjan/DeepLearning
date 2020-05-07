@@ -36,14 +36,14 @@ class CNN(nn.Module):
         )
         self.fc = nn.Linear(100, 10)
 
-        torch.nn.init.xavier_normal_(self.fc.weight)
-        # for m in self.modules():
-        #     if isinstance(m, nn.Conv2d):
-        #         nn.init.kaiming_normal_(m.weight.data)
-        #         m.bias.data.fill_(0)
-        #     if isinstance(m, nn.Linear):
-        #         nn.init.kaiming_normal_(m.weight.data)
-        #         m.bias.data.fill_(0)
+        # torch.nn.init.xavier_normal_(self.fc.weight)
+        for m in self.modules():
+            if isinstance(m, nn.Conv2d):
+                nn.init.kaiming_normal_(m.weight.data)
+                m.bias.data.fill_(0)
+            if isinstance(m, nn.Linear):
+                nn.init.kaiming_normal_(m.weight.data)
+                m.bias.data.fill_(0)
 
     def forward(self, x):
         out = self.layer1(x)

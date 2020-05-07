@@ -29,14 +29,14 @@ class CNN(nn.Module):
 
         self.fc_layer = nn.Sequential(
             nn.Linear(64*8*8, 100),
-            nn.LeakyReLU(),
             nn.BatchNorm1d(100),
+            nn.ELU(),
             # nn.Dropout(0.1),
             # nn.Softmax(dim=1)
         )
         self.fc = nn.Linear(100, 10)
 
-        torch.nn.init.xavier_normal_(self.fc.weight)
+        # torch.nn.init.xavier_normal_(self.fc.weight)
         # for m in self.modules():
         #     if isinstance(m, nn.Conv2d):
         #         nn.init.kaiming_normal_(m.weight.data)

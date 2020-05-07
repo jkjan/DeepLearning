@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 # hyper parameters
 batch_size = 256
-lr = 0.01
+lr = 0.05
 n_iter = 100
 
 # loss check

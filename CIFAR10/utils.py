@@ -16,7 +16,8 @@ def accuracy_test(model, data, device):
         total += label.size(0)
         correct += (output_index == label).sum().float()
 
-    print("Accuracy of Test Data : %.2f%%" % (100*correct/total))
+    accuracy = 100*correct/total
+    return accuracy
 
 
 def init():

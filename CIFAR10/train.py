@@ -81,7 +81,9 @@ plt.show()
 model.eval()
 
 # testing accuracy
-accuracy_test(model, cifar_test, device)
+accuracy = accuracy_test(model, cifar_test, device)
+
+print("Accuracy of Test Data : %.2f%%" % accuracy)
 
 # save parameters
-torch.save(model, "cifar10_cnn.pkl")
+torch.save(model, "cifar10_cnn_" + str(accuracy) + ".pkl")

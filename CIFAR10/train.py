@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 # hyper parameters
 batch_size = 256
-lr = 0.05
+lr = 0.1
 n_iter = 100
 
 # loss check
@@ -32,7 +32,7 @@ criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=lr)
 
 # scheduler
-# scheduler = lr_scheduler.StepLR(optimizer, step_size=30, gamma=0.2)
+scheduler = lr_scheduler.StepLR(optimizer, step_size=10, gamma=0.2)
 
 # to train
 model.train()

@@ -7,34 +7,35 @@ class CNN(nn.Module):
         self.batch_size = batch_size
         self.layer1 = nn.Sequential(
             nn.Conv2d(3, 16, 3, padding=1),
-            nn.PReLU(),
             nn.BatchNorm2d(16),
+            nn.ELU(),
             nn.Dropout2d(0.2),
         )
 
         self.layer2 = nn.Sequential(
             nn.Conv2d(16, 32, 3, padding=1),
-            nn.PReLU(),
             nn.BatchNorm2d(32),
+            nn.ELU(),
             nn.Dropout2d(0.2),
             nn.MaxPool2d(2, 2),
         )
 
         self.layer3 = nn.Sequential(
             nn.Conv2d(32, 64, 3, padding=1),
-            nn.PReLU(),
             nn.BatchNorm2d(64),
-            nn.Dropout2d(0.3),
+            nn.ELU(),
+            nn.Dropout2d(0.2),
             nn.MaxPool2d(2, 2)
         )
 
         self.fc_layer = nn.Sequential(
             nn.Linear(64*8*8, 100),
-            nn.PReLU(),
             nn.BatchNorm1d(100),
-            nn.Dropout(0.3),
+            nn.ELU(),
+            nn.Dropout(0.2),
+            nn.Linear(100, 10)
         )
-        self.fc = nn.Linear(100, 10)
+        # self.fc = nn.Linear(100, 10)
 
         # torch.nn.init.xavier_normal_(self.fc.weight)
         for m in self.modules():
@@ -51,6 +52,6 @@ class CNN(nn.Module):
         out = self.layer3(out)
         out = out.view(self.batch_size, -1)
         out = self.fc_layer(out)
-        out = self.fc(out)
+        # out = self.fc(out)
 
         return out

@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 # hyper parameters
 batch_size = 256
-lr = 0.1
+lr = 0.05
 n_iter = 100
 
 # loss check
@@ -32,7 +32,7 @@ criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=lr)
 
 # scheduler
-scheduler = lr_scheduler.StepLR(optimizer, step_size=10, gamma=0.2)
+# scheduler = lr_scheduler.StepLR(optimizer, step_size=20, gamma=0.2)
 
 # to train
 model.train()
@@ -82,8 +82,7 @@ model.eval()
 
 # testing accuracy
 accuracy = accuracy_test(model, cifar_test, device)
-
 print("Accuracy of Test Data : %.2f%%" % accuracy)
 
 # save parameters
-torch.save(model, "cifar10_cnn_" + str(accuracy) + ".pkl")
+torch.save(model, "cifar10_cnn_" + str(round(accuracy, 2)) + ".pkl")

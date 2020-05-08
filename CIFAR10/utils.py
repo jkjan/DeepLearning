@@ -16,7 +16,7 @@ def accuracy_test(model, data, device):
         total += label.size(0)
         correct += (output_index == label).sum().float()
 
-    accuracy = 100*correct/total
+    accuracy = (100*correct/total).item()
     return accuracy
 
 

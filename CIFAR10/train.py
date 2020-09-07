@@ -11,11 +11,11 @@ import matplotlib.pyplot as plt
 
 # hyper parameters
 batch_size = 256
-lr = 0.05
-n_iter = 100
+lr = 0.1
+n_iter = 10
 
 # loss check
-print_per = 10
+print_per = 1
 
 # initiating
 device = init()
